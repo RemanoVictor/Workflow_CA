@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+<title>karusell</title>
+    </head>
+        
+<link rel="stylesheet" href="stylesheets/karusell.css">
+
+    
+<body>
+<div id="gallery">       
+<div class="w3-content w3-display-container">
+            
+    
+   
+     <div class="mySlides">        
+         <img src="images/coding_pair.jpg" style="width:100%" alt="Picture from an UNSA Oslo event">
+         <p class="slide-caption">photo: </p>
+    </div>
+  
+    
+     <div class="mySlides">        
+        <img src="Img/events/gallery/60.jpg" style="width:100%" alt="Picture from an UNSA Oslo event">
+        <p class="slide-caption">Photo: </p>
+    </div>
+  
+    
+     <div class="mySlides">        
+         <img src="Img/events/gallery/61.jpg" style="width:100%" alt="Picture from an UNSA Oslo event">
+        <p class="slide-caption">Photo: </p>
+    </div>
+  
+  
+  
+    
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+</div>
+    
+    
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+         
+    
+      
+   
+        
+        
+        
+        
+    </body>
+
+
+</html>
