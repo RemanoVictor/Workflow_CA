@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src='main.js'></script>
+
+    <style>
+        @font-face {
+            font-family: rajdhani;
+            src: url(fonts/rajdhani-semibold.ttf);
+            }
+
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: #15172c;
+        }
+
+        
+        
+        .accordion_box{
+            width: 60%;
+            background-color: #fff142;
+            margin: 20px auto;
+            padding: 8px 20px;
+            border: 1.5px solid #fff142;
+            
+            
+        }
+
+        .accordion_box h3 {
+            font-size: 1.875em;
+            font-family: rajdhani;
+            margin: 0;
+            
+        }
+        .accordion_box i {
+            float: right;
+            padding-top: 4px;
+        }
+
+        .accordion_box:hover {
+            cursor: pointer;
+            color: white;
+            background-color: #15172c;
+            border: 1.5px solid #fff142;
+        }
+
+        .accordion_text {
+            width: 50%;
+            margin: 0 auto;
+            color: white;
+            
+            
+        }
+    
+        #vid {
+            text-align: center;
+            
+        }
+    
+        #vid video {
+            width: 100%;
+        }
+
+        .container_accordion p {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 20px;
+        }
+
+        
+        @media only screen and (max-width: 600px) {
+            .accordion_box {
+                width: 80%;
+            }
+            .accordion_box h3 {
+                font-size: 1.3em;
+            }
+
+            .accordion_text {
+            width: 70%;
+            
+        }
+
+        .accordion_box i {
+          
+            padding-top: 0px;
+        }
+        }
+    
+    
+    </style>
+</head>
+<body>
+
+        <div class="container_accordion">
+        <div id="accordionTrigger1" class="accordion_box" onclick="toggleDisplay1()">
+            <h3><span>Web - og mobile enheter</span> <i class="fa fa-chevron-right" aria-hidden="true" ></i></h3>
+        </div>
+        <div id="accordionContent1" style="display: none" class="accordion_text" >
+                <p>Frontend-utvikling er for deg som vil jobbe med utvikling av brukerorienterte løsninger for web- og mobile enheter. Studiet passer for både nybegynnere innen fagfeltet, og dem som har jobbet med tradisjonelle medier og ønsker å jobbe videre med utvikling av digitale løsninger.<p>
+
+                Etter utdanningen har du kompetanse i grunnleggende designprinsipper, universell utforming, helhetlige brukeropplevelser og tekniske løsninger som oppfyller dagens krav og behov.</p>
+        </div>
+
+        <div id="accordionTrigger2" class="accordion_box" onclick="toggleDisplay2()">
+                <h3><span>God utviklerpraksis</span> <i class="fa fa-chevron-right" aria-hidden="true" ></i></h3>
+            </div>
+            <div id="accordionContent2" style="display: none" class="accordion_text" >
+                    <p>Gjennom studiet vil du lære god utviklerpraksis. Du vil kunne produsere interaktive webløsninger, både visuelt og teknisk, og gjennomføre en interaktiv løsning fra idé til ferdig og fungerende produkt. Studentene vil kunne bygge relasjoner med grafisk designere, interaksjonsdesignere, programmerere, og innholdsutviklere. Videre vil de kunne samarbeide med eksterne fagmiljøer innen sosiale medier, universell utforming, søkemotoroptimalisering og IT-sikkerhet.</p>
+            <div id="vid">
+            <video controls>
+                <source src="video/Frontend_vid_1.mp4">
+            </video>
+        </div>
+            </div>
+
+            <div id="accordionTrigger3" class="accordion_box" onclick="toggleDisplay3()">
+                    <h3><span>Lær koding og programmeringsspråk</span> <i class="fa fa-chevron-right" aria-hidden="true" ></i></h3>
+                </div>
+                <div id="accordionContent3" style="display: none" class="accordion_text" >
+                        <p>Studentene får grundig innføring i bransjeverktøy som anvendes innen webutvikling. Du lærer designprinsipper, hvordan nettsider og interaktive produkter er bygget opp logisk og visuelt, og hvordan nettsideteknologi kommuniserer med bakenforliggende systemer. Undervisningen gir innblikk i programmeringsspråk som Java, C-baserte språk, Ruby, php og Python, som alle har ulike styrker og svakheter og forskjellige bruksområder.<p>
+
+                                JavaScript er viktig for frontend-utviklere. I kombinasjon med HTML og CSS står dette sentralt for å skape dynamiske og interaktive webløsninger. Det er også viktig å vudere når det er hensiktsmessig å benytte JavaScript-rammeverk, og når det er best å løse oppdrag uten å anvende dette. Du blir introdusert for de til enhver tid mest aktuelle JavaScript-rammeverkene, eksempelvis Angular og React. Utviklingen på feltet skjer raskt og det blir stadig lansert nye rammeverk.<p>
+                                
+                                Sass er det viktigste CSS-verktøyet studentene lærer, men studiet tar også for seg Less, Stylus og CSS-rammeverket Susy. Mot slutten av studiet blir studentene introdusert for AJAX for å kunne utvikle mer avanserte webløsninger. </p>
+                </div>
+    </div>
+</body>
+</html>
