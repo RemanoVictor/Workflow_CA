@@ -1,76 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
-
-    <head>
-<title>karusell</title>
-    </head>
-        
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="stylesheets/karusell.css">
-
-    
+</head>
 <body>
-<div id="gallery">       
-<div class="w3-content w3-display-container">
-            
-    
-   
-     <div class="mySlides">        
-         <img src="images/coding_pair.jpg" style="width:100%" alt="Picture from an UNSA Oslo event">
-         <p class="slide-caption">photo: </p>
-    </div>
-  
-    
-     <div class="mySlides">        
-        <img src="Img/events/gallery/60.jpg" style="width:100%" alt="Picture from an UNSA Oslo event">
-        <p class="slide-caption">Photo: </p>
-    </div>
-  
-    
-     <div class="mySlides">        
-         <img src="Img/events/gallery/61.jpg" style="width:100%" alt="Picture from an UNSA Oslo event">
-        <p class="slide-caption">Photo: </p>
-    </div>
-  
-  
-  
-    
 
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+<!-- Slideshow mid page – Bilder med linker til alle artiklene -->
+<div class="upper_carousel">
+     
+     
+     
+<div class="slideshow-container2">
+
+<div class="mySlides2 fade2">        
+     <img class="carouselImg" src="images/coding_pair.jpg" style="width:100%" alt="Studenter som gjør prosjektoppgave sammen">
+    <a class="carusell-link2" href="#">
+        <div class="carusell-button2"><h4 class="carusell-tittle2">Nyheter om<br>frontend-studiet</h4></div>
+    </a>
+</div>
+<div class="mySlides2 fade2">        
+     <img class="carouselImg" src="images/john-schnobrich-520023-unsplash.jpg" style="width:100%" alt="Studenter som peker på en skjerm.">
+    <a class="carusell-link2" href="#">
+        <div class="carusell-button2"><h4 class="carusell-tittle2">Les mer om<br>kursets innhold</h4></div>
+    </a>
+</div>
+<div class="mySlides2 fade2">        
+    <img class="carouselImg" src="images/application-blur-business-270408.jpg" style="width:100%" alt="Skjermbilde med koder, der teksten Sign up today står i fokus.">
+    
+        <a class="carusell-link2" href="#">
+            <div class="carusell-button2"><h4 class="carusell-tittle2">Søk på studiet</h4></div>
+    </a>
+</div>
+
+</div>
+
+<div class="dots2" style="text-align:center">
+  <span class="dot2"></span> 
+  <span class="dot2"></span> 
+  <span class="dot2"></span> 
+</div>
+</div>
+    
+<div class="nedre_carusel">    
+<div class="slideshow-container">
+
+<div class="mySlides fade">        
+         <img class="carouselImg" src="images/karusellbilde1_alexander.jpg" style="width:100%" alt="Bilde av Alexander som fikk internship">
+        <a href="#">    
+            <div class="TextBox">
+                <h4 class="carusell-tittle">Alexander fikk internship hos FN etter semesterprosjekt</h4>
+                <p class="byline">Skrevet av Mathilde Stray Øksendal<br>Publisert 08. april 2019</p>
+         <p class="slide-article">–  Jeg synes det er veldig spennende å kunne bruke kunnskapen jeg skaffer meg gjennom studiet direkte inn i FN, sier han.</p>
+                <a class="carusell-link"><div class="carusell-button">Les mer</div></a>
+           </div>
+        </a>
+    </div>
+  
+    
+     <div class="mySlides fade">        
+        <img class="carouselImg" src="images/karusellbilde4_hacker.jpg" style="width:100%" alt="Bilde av Geir André">
+          <a href="#">    
+            <div class="TextBox">
+          <h4 class="carusell-tittle">- Jeg er en hacker, en snill en</h4>
+                <p class="byline">Skrevet av Mathilde Stray Øksendal<br>Publisert 27. mars 2019</p>
+         <p class="slide-article">Geir André (36) jobber som sikkerhetsekspert i Kristiansand. – For meg er det drømmen å fullføre en bachelorgrad.</p>
+                 <a class="carusell-link"><div class="carusell-button">Les mer</div></a>
+           </div>
+        </a>
+    </div>
+  
+    
+     <div class="mySlides fade">        
+         <img class="carouselImg" src="images/karusellbilde3_Nettstudenter.jpg" style="width:100%" alt="Bilde av de tre nettstudentene Julie, Ada og Andreas.">   
+            <div class="TextBox">
+                <h4 class="carusell-tittle">Nettstudent på egne premisser</h4>
+                <p class="byline">Skrevet av Mathilde Stray Øksendal<br>
+Publisert 04. mars 2019</p>
+         <p class="slide-article">Julie, Ada og Andreas lever ingen A4-liv. De kombinerer hver for seg nettstudier med gårdsdrift, seilbåt og småbarnsliv. </p>
+                 <a class="carusell-link"><div class="carusell-button">Les mer</div></a>
+           </div>
+    </div>
+
+</div>
+
+<div class="dots" style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
 </div>
 </div>
     
     
 <script>
-var slideIndex = 1;
-showDivs(slideIndex);
+    
+var slideIndexTwo = 0;
+runSlides();
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
+function runSlides() {
   var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
+  var slides = document.getElementsByClassName("mySlides2");
+  var dots2 = document.getElementsByClassName("dot2");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
   }
-  x[slideIndex-1].style.display = "block";  
+  slideIndexTwo++;
+  if (slideIndexTwo > slides.length) {slideIndexTwo = 1}    
+  for (i = 0; i < dots2.length; i++) {
+    dots2[i].className = dots2[i].className.replace(" active2", "");
+  }
+  slides[slideIndexTwo-1].style.display = "block";  
+  dots2[slideIndexTwo-1].className += " active2";
+  setTimeout(runSlides, 3000); // Change image every 4 seconds
+}
+    
+    
+    
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 4 seconds
 }
 </script>
 
+</body>
+</html> 
 
-         
-    
-      
+  
+     
+  
+  
+  
    
-        
-        
-        
-        
-    </body>
-
-
-</html>
