@@ -1,0 +1,67 @@
+/* victor code start*/
+
+.container{
+    display: inline-flex;
+}
+
+.container1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.txt_1{
+    grid-column: 1/3;
+    grid-row: 1;
+    font-weight: bold;
+    font-family: 'PT Sans regular',sans-serif;
+}
+
+.txt_2{
+    grid-column: 1/3;
+    grid-row: 2;
+    font-family: 'PT Sans regular',sans-serif;
+}
+
+.feu_title{
+    font-size: 4.375em;
+    font-family:  'rajdhani SemiBold', sans-serif;
+    
+}
+
+.crs_dtls{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.375em;
+    margin-right: 20px;
+}
+
+.janice{
+    width: 100%;
+    height: auto;
+    grid-column: 1/2;
+    grid-row: 3;
+    margin-top: 50px;
+    
+}
+.janice_txt{
+    grid-column: 2/3;
+    grid-row: 3;
+    width: auto;
+    height: auto;
+}
+
+.janice1{
+    font-family: 'rajdhani SemiBold',sans-serif;
+    font-size: 3.125em;
+}
+
+.janice2{
+    font-family: 'rajdhani SemiBold',sans-serif;
+    font-size: 1.750em;
+    text-align: right;
+    margin-top: 50px;
+}
+
+
+
+
+/*victor code end*/

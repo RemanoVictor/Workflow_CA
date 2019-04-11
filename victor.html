@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+
+    <html lang="NO">
+
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+            <title> Front-end Utvikling </title>
+    
+            <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/style.css">
+            
+            <link href="https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700" rel="stylesheet">
+            
+            <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+            
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> 
+            
+            <style>
+                
+                body{
+                    box-sizing: border-box;
+                    margin: 0;
+                    background-color: #15172c;
+                }
+            
+                .navigation{
+                    background-color: #15172c;
+                    color: white;
+                    padding: 1em;
+                    margin: 0 auto;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                }
+                
+                .noroff_logo{
+                    width: 10%;
+                    padding-left: 5em;
+                    padding-top: 0.5em;
+                }
+                
+                .links{
+                    float: right;
+                    padding-right: 5em;
+                }
+                
+                ul li{
+                    display: inline-block;
+                    padding-top: 0.5em;
+                }
+                
+                ul li a{
+                    text-decoration: none;
+                    font-family: 'PT Sans', sans-serif;
+                    margin-right: 0.8em;
+                    font-weight: 400;
+                }
+                
+         
+                .a_links a{
+                  color: white;
+                }
+                
+                a:hover{
+                    border-bottom: 1.5px solid;
+                    border-bottom-color: #fff142;
+                }
+                
+                .sok_naa_button a{
+                    color: #15172c;
+                    background-color: #fff142;
+                    padding: 0.5em;
+                    margin: 0 1em;
+                    border:  1.5px solid #fff142;
+                }
+                
+                .sok_naa_button a:hover{
+                    background-color: #15172c;
+                    border:  1.5px solid #fff142;
+                    color: white;
+                }
+                
+                
+                
+                footer{
+                    background-color: #101121;
+                    color: white;
+                    font-family: 'PT Sans', sans-serif;
+                }
+                
+                .footer_title{
+                    font-size: 22px;
+                    font-weight: 400;
+                }
+                
+                .fotter_text{
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+                
+                .footer_grid{
+                    display: inline-grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-column-gap: 8em;
+                    padding: 5em 8em;
+                }
+                
+                .footer_grid_1{
+                    display: grid;
+                }
+                
+                .footer_grid_2{
+                    display: grid;
+                }
+                
+                .footer_grid_3{
+                    display: grid;
+                }
+                
+                .footer_button_text{
+                    border:  1.5px solid #fff142;
+                    background-color: #15172c;
+                    color: white;
+                    width: 98%;
+                    height: 10%;
+                    margin-bottom: 1em;
+                }
+                
+                .footer_button{
+                    border:  1.5px solid #fff142;
+                    background-color: #fff142;
+                    color: #15172c;
+                    width: 100%;
+                    height: 14%;
+                    margin-bottom: 1em;
+                    font-size: 15px;
+                }
+                
+                .footer_button:hover{
+                    border:  1.5px solid #fff142;
+                    background-color: #15172c;
+                    color: white;
+                }
+                
+                .innhold{
+                    font-family: 'PT Sans', sans-serif;
+                    font-size: 20px;
+                    color: white;
+                }
+                
+                .mobile_navigation{
+                    display: none;
+                }
+                
+                
+                @media only screen and (max-width: 900px){
+                    
+                    
+                    .navigation{
+                        display: none;
+                    }
+                    
+                    .mobile_navigation{
+                    display: block;
+                    background-color: #15172c;
+                    color: white;
+                    padding: 1em;
+                    margin: 0 auto;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    }
+                    
+                    .noroff_logo{
+                    width: 25%;
+                    padding-left: 2em;
+                    padding-top: 0.5em;
+                    }
+                    
+                   .mobile_links ul{
+	                   transition: 6s ease-in-out;
+                    }
+                    
+                    .mobile_navigation i{
+                        font-size: 2em;
+                        float: right;
+                        padding: 0.5em 2em 0 0;
+                    }
+                    
+                    
+                    .mobile_links ul li{
+                    display: block;
+                    padding: 1em 0 0 0;
+    
+                    }
+                
+                    
+                .mobile_a_links a{
+                    display: block;
+                    color: white;
+                    text-decoration: none;
+                    font-family: 'PT Sans', sans-serif;
+                    margin-right: 0.8em;
+                    font-weight: 400;
+                    font-size: 1.1em;
+                    border-bottom: 1.5px solid;
+                    border-bottom-color: #15172c;
+                }
+                
+                a:hover{
+                    border-bottom: 1.5px solid;
+                    border-bottom-color: #fff142;
+                }
+                
+                
+                    .mobile_sok_naa_button{
+                        margin: 6% 0;
+                    }
+                    
+                    .mobile_sok_naa_button a{
+                    color: #15172c;
+                    background-color: #fff142;
+                    padding: 0.5em;
+                    border:  1.5px solid #fff142;
+                }
+                
+                .mobile_sok_naa_button a:hover{
+                    background-color: #15172c;
+                    border:  1.5px solid #fff142;
+                    color: white;
+                }
+                    
+                    
+                    .footer_grid{
+                    display: inline-grid;
+                    grid-template-columns: 1fr;
+                    grid-column-gap: 8em;
+                    padding: 5em 3em;
+                }
+            
+                
+                .footer_grid_2{
+                    padding-top: 20%;
+                
+                }
+                
+                .footer_grid_3{
+                    padding-top: 20%;
+                
+                }
+                    
+                      .footer_button_text{
+                    height: 100%;
+                    
+                }
+                
+                .footer_button{
+                    margin-top: 10%;
+                    height: 50%;
+   
+                }
+                }
+                
+                
+                @media only screen and (max-width: 600px){
+                    .navigation{
+                        display: none;
+                    }
+                    
+                     .mobile_navigation{
+                    display: block;
+                    }
+                    
+                   
+                }
+            </style>
+        </head>
+        
+        <body>
+    <div class="navigation">
+        
+        <img class="noroff_logo" src="logos/Asset%201.svg">
+        <nav class="links">
+            <ul>
+
+                <li class="a_links"><a href="#">Studie</a></li>
+                <li class="a_links"><a href="#">Søknad</a></li>
+                <li class="a_links"><a href="#">Nyheter</a></li>
+                <li class="a_links"><a href="#">Om</a></li>
+                <li class="a_links"><a href="#">Forsning</a></li>
+                <li class="a_links"><a href="#">Kontakt</a></li>
+                <li class="a_links"><a href="#">Mine sider</a></li>
+                
+            
+            
+    
+                <li class="sok_naa_button"><a href="#">SØK NÅ</a></li>
+    
+            
+        
+                <li class="a_links"><a href="#">NO</a></li>
+                <li class="a_links"><a href="#">EN</a></li>
+            </ul>
+        </nav>
+        
+    </div>
+
+            
+            
+            
+            
+            
+            <div class="mobile_navigation">
+        
+        <img class="noroff_logo" src="logos/Asset%201.svg">
+        <i id="navbar" class="fa fa-bars"></i>
+          
+                
+        <nav class="mobile_links">
+            <ul>
+
+                <li class="mobile_a_links"><a href="#">Studie</a></li>
+                <li class="mobile_a_links"><a href="#">Søknad</a></li>
+                <li class="mobile_a_links"><a href="#">Nyheter</a></li>
+                <li class="mobile_a_links"><a href="#">Om</a></li>
+                <li class="mobile_a_links"><a href="#">Forsning</a></li>
+                <li class="mobile_a_links"><a href="#">Kontakt</a></li>
+                <li class="mobile_a_links"><a href="#">Mine sider</a></li>
+                
+            
+            
+    
+                <li class="mobile_sok_naa_button"><a href="#">SØK NÅ</a></li>
+    
+            
+        
+                <li class="mobile_a_links"><a href="#">NO</a></li>
+                <li class="mobile_a_links"><a href="#">EN</a></li>
+            </ul>
+        </nav>
+                   
+        
+    </div>
+        
+        <div class="innhold">
+        
+ 
+            <h1 class=" feu_title"> Frontend Utvikling </h1>
+
+            <div class="container">
+                <p class="crs_dtls"> 120 Studiepoeng</p> 
+                <p class="crs_dtls"> 2 År - 4 År </p> 
+                <p class="crs_dtls"> Klasserom/Nettstudier</p>
+
+            </div>
+
+
+
+            <div class="container1">
+
+                <p class="txt_1"> 
+                    Frontend-utvikling er teknologiutdanning hvor visuell utforming meter koding, web og UX-design.
+                    Det store behovet for frontend-utviklere nærmest garanterer jobb etter studier.
+                </p>
+
+                <p class="txt_2">
+                    Som frontend-utvikler skriver du koden bak det du kan se og interagere med når du åpner en nettside, et program eller en app. Behovet for utviklere som besitter en kombinasjon av teknisk og visuell kompetanse for praktisk arbeid innen de viktigste områdene ved utvikling av interaktive og dynamiske produkter. Studeit dekker både designfaglige og tekniske programmingsferdigheter.
+                </p>
+
+
+                <img src="images/janice.png" class="janice">
+
+                <div class="janice_txt">
+
+                    
+                    <p class="janice1"> 
+                        "I learned to create amazing websites in the   first year!
+                    </p>
+                    <p class="janice2"> 
+                        -Janice
+                    </p>   
+                </div>
+
+            </div>
+            
+
+
+        
+        </div>
+            
+            
+            <footer>
+                
+                <div class="footer_grid">
+                    <div class="footer_grid_1">
+                        <h1 class="footer_title">Om Noroff</h1>
+
+                        <p class="fotter_text">Hos Norolf studerer fremtidens digitale innovatører. Utdanningstilbudet består av høyskole, fagskole og nettstudier. Vi har campus i Oslo, Bergen, Stavanger og Kristiansand. Les mer om oss.</p>
+
+                        <p class="fotter_text">Personvernerklæring for Noroff</p>
+                        <p class="fotter_text">Informasjonskapsler (cookies) på Noroff.no</p>
+                    </div>
+
+                    <div class="footer_grid_2">
+                        <h1 class="footer_title">Kontakt oss</h1>
+                        <p class="fotter_text">Noroff Education AS
+                            <br>
+                            Elvegata 2A
+                            <br>
+                            4608 Kristiansand S</p>
+                        
+                        <p class="fotter_text"> <i class="fas fa-phone"></i> 38 00 00 00</p>
+                        
+                        <p class="fotter_text"><i class="fas fa-envelope"></i>    utdanning@noroff.no</p>
+                    </div>
+                    
+                    
+                    <div class="footer_grid_3">
+                        <h1 class="footer_title">Motta nyhetsbrev</h1>
+                        <p class="fotter_text">For å kunne sende deg e-post må vi lagre informasjon om deg. Du kan når som helst melde deg av. Les mer i vår personvernerklæring.</p>
+                        
+                        <input class="footer_button_text" type="email" placeholder="email..." name="emailadresse">
+                        <input class="footer_button" type="button" value="Send" onclick="msg()">
+                    </div>
+                    
+                </div>
+            </footer>
+    
+            <script>
+            
+                document.getElementById("navbar").addEventListener("click", display_nav);    
+
+        function display_nav(){
+            let mobileNav = document.querySelector(".mobile_links");
+    
+            if (mobileNav.style.display === "none"){
+                mobileNav.style.display = "block";
+        
+            } else {
+                mobileNav.style.display = "none";
+            }  
+          
+        };
+                
+            
+            
+            </script>
+        </body>
+
+    </html>
