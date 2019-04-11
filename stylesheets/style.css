@@ -1,8 +1,6 @@
 /* victor code start*/
 
-.container{
-    display: inline-flex;
-}
+
 
 .container1{
     display: grid;
@@ -20,18 +18,6 @@
     grid-column: 1/3;
     grid-row: 2;
     font-family: 'PT Sans regular',sans-serif;
-}
-
-.feu_title{
-    font-size: 4.375em;
-    font-family:  'rajdhani SemiBold', sans-serif;
-    
-}
-
-.crs_dtls{
-    font-family: 'PT Sans', sans-serif;
-    font-size: 1.375em;
-    margin-right: 20px;
 }
 
 .janice{
