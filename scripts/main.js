@@ -54,3 +54,63 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 4000); // Change image every 4 seconds
 };
+
+function noroffBergen() {
+  document.getElementById('gmap_canvas').src = "https://www.google.com/maps/d/embed?mid=12VIqI1hsD2hUFlg-1PhM2xHNGmxGAde-&hl=en";
+}
+
+
+function noroffOslo() {
+  document.getElementById('gmap_canvas').src = "https://www.google.com/maps/d/embed?mid=1KOdX_84cgwmBo6oDS6tzFmfgUQ15S3ib&hl=en";
+} 
+
+
+function noroffStavanger() {
+  document.getElementById('gmap_canvas').src = "https://www.google.com/maps/d/embed?mid=1Afy65N70tkZUhRFXYzW1WRi58k4J1BxD&hl=en";
+} 
+
+  
+function noroffKristiansand() {
+  document.getElementById('gmap_canvas').src = "https://www.google.com/maps/d/embed?mid=1UaSGmOQZU_KD0f82vt5j1-bdyLshJvS7&hl=en";
+} 
+
+//Prevents google map links from jumping to the top of the page
+$('a.gmap_links').click(function(e)
+{
+    e.preventDefault();
+});
+
+// accordion 
+function toggleDisplay1() {
+  var y = document.getElementById("accordionTrigger1");
+  y.style.display ="block";
+  var x = document.getElementById("accordionContent1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  
+}
+
+function toggleDisplay2() {
+  var y = document.getElementById("accordionTrigger2");
+  y.style.display ="block";
+  var x = document.getElementById("accordionContent2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function toggleDisplay3() {
+  var y = document.getElementById("accordionTrigger3");
+  y.style.display ="block";
+  var x = document.getElementById("accordionContent3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}

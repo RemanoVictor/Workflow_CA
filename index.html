@@ -87,8 +87,8 @@ z
         
     </div>
         
-        <div class="innhold">
-        <div class="upper_carousel">
+<div class="innhold">
+ <div class="upper_carousel">
      
      
      
@@ -122,7 +122,70 @@ z
   <span class="dot2"></span> 
 </div>
 </div>
+
+<div class="top_intro">
     
+    <h2>Frontend Utvikling</h2>
+
+    <p class="study_info" id="studypoints">120 Studiepoeng</p>
+    <p class="study_info">2-4 År</p>
+    <p class="study_info">Klasserom/Nettstudier</p>
+</div>
+
+<div class="mapOuter">
+    <div class="campus_links" id="mobile_links">
+            <a href="#" onclick="noroffOslo()" class="gmap_links">Oslo</a>
+            <a href="#" onclick="noroffBergen()" class="gmap_links" >Bergen</a><br>
+            <a href="#" onclick="noroffStavanger()" class="gmap_links">Stavanger</a>
+            <a href="#" onclick="noroffKristiansand()" class="gmap_links">Kristiansand</a>
+    </div>
+<div class="gmap">
+    <iframe id="gmap_canvas"
+    src="https://www.google.com/maps/d/embed?mid=1KOdX_84cgwmBo6oDS6tzFmfgUQ15S3ib&hl=en" 
+    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+</div>
+<div class="campus_links" id="desktop_links">
+    <a href="#" onclick="noroffOslo()" class="gmap_links">Oslo</a>
+    <a href="#" onclick="noroffBergen()" class="gmap_links" >Bergen</a>
+    <a href="#" onclick="noroffStavanger()" class="gmap_links">Stavanger</a>
+    <a href="#" onclick="noroffKristiansand()" class="gmap_links">Kristiansand</a>
+</div>
+</div>
+
+<div class="container_accordion">
+        <div id="accordionTrigger1" class="accordion_box" onclick="toggleDisplay1()">
+            <h3><span>Web - og mobile enheter</span> <i class="fa fa-chevron-right" aria-hidden="true" ></i></h3>
+        </div>
+        <div id="accordionContent1" style="display: none" class="accordion_text" >
+                <p>Frontend-utvikling er for deg som vil jobbe med utvikling av brukerorienterte løsninger for web- og mobile enheter. Studiet passer for både nybegynnere innen fagfeltet, og dem som har jobbet med tradisjonelle medier og ønsker å jobbe videre med utvikling av digitale løsninger.<p>
+
+                Etter utdanningen har du kompetanse i grunnleggende designprinsipper, universell utforming, helhetlige brukeropplevelser og tekniske løsninger som oppfyller dagens krav og behov.</p>
+        </div>
+
+        <div id="accordionTrigger2" class="accordion_box" onclick="toggleDisplay2()">
+                <h3><span>God utviklerpraksis</span> <i class="fa fa-chevron-right" aria-hidden="true" ></i></h3>
+            </div>
+            <div id="accordionContent2" style="display: none" class="accordion_text" >
+                    <p>Gjennom studiet vil du lære god utviklerpraksis. Du vil kunne produsere interaktive webløsninger, både visuelt og teknisk, og gjennomføre en interaktiv løsning fra idé til ferdig og fungerende produkt. Studentene vil kunne bygge relasjoner med grafisk designere, interaksjonsdesignere, programmerere, og innholdsutviklere. Videre vil de kunne samarbeide med eksterne fagmiljøer innen sosiale medier, universell utforming, søkemotoroptimalisering og IT-sikkerhet.</p>
+            <div id="vid">
+            <video controls>
+                <source src="video/Frontend_vid_1.mp4">
+            </video>
+        </div>
+            </div>
+
+            <div id="accordionTrigger3" class="accordion_box" onclick="toggleDisplay3()">
+                    <h3><span>Lær koding og programmeringsspråk</span> <i class="fa fa-chevron-right" aria-hidden="true" ></i></h3>
+                </div>
+                <div id="accordionContent3" style="display: none" class="accordion_text" >
+                        <p>Studentene får grundig innføring i bransjeverktøy som anvendes innen webutvikling. Du lærer designprinsipper, hvordan nettsider og interaktive produkter er bygget opp logisk og visuelt, og hvordan nettsideteknologi kommuniserer med bakenforliggende systemer. Undervisningen gir innblikk i programmeringsspråk som Java, C-baserte språk, Ruby, php og Python, som alle har ulike styrker og svakheter og forskjellige bruksområder.<p>
+
+                                JavaScript er viktig for frontend-utviklere. I kombinasjon med HTML og CSS står dette sentralt for å skape dynamiske og interaktive webløsninger. Det er også viktig å vudere når det er hensiktsmessig å benytte JavaScript-rammeverk, og når det er best å løse oppdrag uten å anvende dette. Du blir introdusert for de til enhver tid mest aktuelle JavaScript-rammeverkene, eksempelvis Angular og React. Utviklingen på feltet skjer raskt og det blir stadig lansert nye rammeverk.<p>
+                                
+                                Sass er det viktigste CSS-verktøyet studentene lærer, men studiet tar også for seg Less, Stylus og CSS-rammeverket Susy. Mot slutten av studiet blir studentene introdusert for AJAX for å kunne utvikle mer avanserte webløsninger. </p>
+                </div>
+    </div>
+
 <div class="nedre_carusel">    
 <div class="slideshow-container">
 
@@ -216,8 +279,9 @@ Publisert 04. mars 2019</p>
     
          
       
-    
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <script src="scripts/main.js"></script>
+            
         </body>
 
     </html>
