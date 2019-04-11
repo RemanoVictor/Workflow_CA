@@ -36,12 +36,20 @@
                 padding-right: 30%;
                 float: right;
                 font-size: 0.8em;
+                width: 100%;
+                padding-left: 10%;
+            }
+            
+            .title_tabel{
+                width: 5%;
                 
             }
             
+            
             .tabel tr td{
                 font-family: 'PT Sans', sans-serif;
-                margin-left: 30%;
+                width: 5%;
+                
             }
             
             .tabel tr .title_tabel{
@@ -53,19 +61,27 @@
             .tabel td{
                 border-bottom: 1.5px solid;
                 border-bottom-color: #fff142;
-                padding: 2% 0 4% 10%; 
+                padding: 2% 0 4% 0; 
             }
             
             
             @media only screen and (max-width: 600px){
+                
+                   .title_info{
+                margin-left: 2%;
+            }
+                
                 .studentinfo{
                 float: none;
-                margin-left: 5%;
-                    
+                margin-left: 10%;   
+                    display: block;
+
             }
-                        table{
+                table{
+                    display: block;
                 margin-left: 5%;
                 padding-right: 15%;
+                font-size: 20em;
             }
                 
                 .tabel td{
@@ -76,21 +92,29 @@
             
             
             @media only screen and (max-width: 900px){
+                
+                .title_info{
+                margin-left: 2%;
+            }
+                
                 .studentinfo{
                 float: none;
-                margin-left: 5%;
+                margin-left: 20%;
                     
             }
                         table{
                 margin-left: 20%;
-                padding-right: 20%;
+                font-size: 1em;
             }
                 
                 .tabel td{
                 padding: 2% 0 3% 15%; 
+                width: 20%;
             }
                 
             }
+            
+            
         </style>
 	</head>
 	<body>
