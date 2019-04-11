@@ -13,7 +13,10 @@
         <style>
             body{
                 box-sizing: border-box;
+                background-color: #15172c;
+                color: white;
             }
+            
             
             .title_info{
                 font-family: 'PT Sans', sans-serif;
@@ -24,29 +27,68 @@
                 border-left: 1.5px solid;
                 border-left-color: #fff142;
                 float: right;
+                margin-left: 45%;
             }
             
             table{
                 border-spacing: 0 12px;
                 margin-left: 5%;
+                padding-right: 30%;
+                float: right;
+                font-size: 0.8em;
                 
             }
             
             .tabel tr td{
-                background-color: aquamarine;
                 font-family: 'PT Sans', sans-serif;
-                margin-left: 3%;
+                margin-left: 30%;
             }
             
             .tabel tr .title_tabel{
                 vertical-align: top;
-                background-color: blanchedalmond;
                 padding-left: 2%;
+                padding-top: 2%;
             }
             
             .tabel td{
                 border-bottom: 1.5px solid;
                 border-bottom-color: #fff142;
+                padding: 2% 0 4% 10%; 
+            }
+            
+            
+            @media only screen and (max-width: 600px){
+                .studentinfo{
+                float: none;
+                margin-left: 5%;
+                    
+            }
+                        table{
+                margin-left: 5%;
+                padding-right: 15%;
+            }
+                
+                .tabel td{
+                padding: 2% 0 3% 5%; 
+            }
+                
+            }
+            
+            
+            @media only screen and (max-width: 900px){
+                .studentinfo{
+                float: none;
+                margin-left: 5%;
+                    
+            }
+                        table{
+                margin-left: 20%;
+                padding-right: 20%;
+            }
+                
+                .tabel td{
+                padding: 2% 0 3% 15%; 
+            }
                 
             }
         </style>
