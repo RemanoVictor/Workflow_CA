@@ -64,7 +64,6 @@
                 }
                 
                 
-                
                 footer{
                     background-color: #101121;
                     color: white;
@@ -101,28 +100,30 @@
                 }
                 
                 .footer_button_text{
-                    border:  1.5px solid #fff142;
+                    border:  1.5px solid #fff142!important;
                     background-color: #15172c;
                     color: white;
-                    width: 98%;
+                    width: auto!important;
                     height: 50%;
                     margin-bottom: 1em;
+                    border-radius:0px!important;
                 }
                 
                 .footer_button{
-                    border:  1.5px solid #fff142;
-                    background-color: #fff142;
-                    color: #15172c;
-                    width: 100%;
-                    height: 50%;
+                    border:  1.5px solid #fff142!important;
+                    background-color: #fff142!important;
+                    color: #15172c!important;
+                    width: 100%!important;
+                    height: 50% !important;
                     margin-bottom: 1em;
                     font-size: 15px;
+                    border-radius: 0px!important;
                 }
                 
                 .footer_button:hover{
-                    border:  1.5px solid #fff142;
-                    background-color: #15172c;
-                    color: white;
+                    border:  1.5px solid #fff142!important;
+                    background-color: #15172c!important;
+                    color: white!important;
                 }
                 
                 .innhold{
@@ -624,6 +625,27 @@ a{
     font-size: 20px;
 }
 
+.footer_button_text{
+    border:  1.5px solid #fff142!important;
+    background-color: #15172c;
+    color: white;
+    width: 97%!important;
+    height: 50%;
+    margin-bottom: 1em;
+    border-radius:0px!important;
+}
+
+.footer_button{
+    border:  1.5px solid #fff142!important;
+    background-color: #fff142!important;
+    color: #15172c!important;
+    width: 100%!important;
+    height: 50% !important;
+    margin-bottom: 1em;
+    font-size: 15px;
+    border-radius: 0px!important;
+}
+
 
 @media only screen and (max-width: 600px) {
 
@@ -661,9 +683,7 @@ a{
     }
 
     .accordion_text {
-    width: 75%;
-    
-    
+    width: 75%;   
 }
 
 .container_accordion p {
@@ -735,6 +755,27 @@ a{
     font-size: 1.750em;
     text-align: right;
     margin-top: 5px;
+}
+
+.footer_button_text{
+    border:  1.5px solid #fff142!important;
+    background-color: #15172c;
+    color: white;
+    width: 96%!important;
+    height: 50%;
+    margin-bottom: 1em;
+    border-radius:0px!important;
+}
+
+.footer_button{
+    border:  1.5px solid #fff142!important;
+    background-color: #fff142!important;
+    color: #15172c!important;
+    width: 100%!important;
+    height: 50% !important;
+    margin-bottom: 1em;
+    font-size: 15px;
+    border-radius: 0px!important;
 }
 
 /*victor code end*/
