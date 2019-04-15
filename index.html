@@ -115,7 +115,7 @@
 
                         <div class="mySlides2 fade2">        
                             <img class="carouselImg" src="images/coding_pair.jpg" style="width:100%" alt="Studenter som gjør prosjektoppgave sammen">
-                            <a class="carusell-link2" href="#">
+                            <a class="carusell-link2" href="#news">
                                 <div class="carusell-button2">
                                     <h4 class="carusell-tittle2">Nyheter om<br>frontend-studiet</h4>
                                 </div>
@@ -123,7 +123,7 @@
                         </div>
                         <div class="mySlides2 fade2">        
                             <img class="carouselImg" src="images/john-schnobrich-520023-unsplash.jpg" style="width:100%" alt="Studenter som peker på en skjerm.">
-                                <a class="carusell-link2" href="#">
+                                <a class="carusell-link2" href="#accordion_jump">
                                     <div class="carusell-button2">
                                         <h4 class="carusell-tittle2">Les mer om<br>kursets innhold</h4>
                                     </div>
@@ -131,9 +131,9 @@
                         </div>
                         <div class="mySlides2 fade2">        
                             <img class="carouselImg" src="images/application-blur-business-270408.jpg" style="width:100%" alt="Skjermbilde med koder, der teksten Sign up today står i fokus.">
-                            <a class="carusell-link2" href="#">
+                            <a class="carusell-link2" href="#studie_jump">
                                 <div class="carusell-button2">
-                                    <h4 class="carusell-tittle2">Søk på studiet</h4>
+                                    <h4 class="carusell-tittle2">Studieinformasjon</h4>
                                 </div>
                             </a>
                         </div>
@@ -187,9 +187,10 @@
                     <p class="txt_2">
                         Som frontend-utvikler skriver du koden bak det du kan se og interagere med når du åpner en nettside, et program eller en app. Behovet for utviklere som besitter en kombinasjon av teknisk og visuell kompetanse for praktisk arbeid innen de viktigste områdene ved utvikling av interaktive og dynamiske produkter. Studeit dekker både designfaglige og tekniske programmingsferdigheter.
                     </p>
-
+                    
+                    <div class="janice_img">   
                     <img src="images/janice.png" class="janice">
-
+                    </div>     
                     <div class="janice_txt">    
 
                         <p class="janice1"> 
@@ -199,11 +200,11 @@
                             - Janice
                         </p>   
                     </div>
-
+                
                 </div>
                 <!--victor code end-->
-
-                <div class="container_accordion">
+                <div id="accordion_jump"></div>
+                <div class="container_accordion" id="container_accordion">
                     <div id="accordionTrigger1" class="accordion_box" onclick="toggleDisplay1()">
                         <h3><span>Web - og mobile enheter</span> <i class="fa fa-chevron-right" aria-hidden="true" ></i></h3>
                     </div>
@@ -237,19 +238,21 @@
                     </div>
                 </div>
 
-                <div class="nedre_carusel">    
+                <div class="nedre_carusel" id="news">    
                     <div class="slideshow-container">
 
                         <div class="mySlides fade">        
                             <img class="carouselImg" src="images/karusellbilde1_alexander.jpg" style="width:100%" alt="Bilde av Alexander som fikk internship">
                             <a href="#">    
                                 <div class="TextBox">
+                                    <div class="sub_txtbox">
                                     <h4 class="carusell-tittle">Alexander fikk internship hos FN etter semesterprosjekt</h4>
                                     <p class="byline">Skrevet av Mathilde Stray Øksendal<br>Publisert 08. april 2019</p>
                                     <p class="slide-article">–  Jeg synes det er veldig spennende å kunne bruke kunnskapen jeg skaffer meg gjennom studiet direkte inn i FN, sier han.</p>
                                     <a class="carusell-link">
                                         <div class="carusell-button">Les mer</div>
                                     </a>
+                                </div>
                                 </div>
                             </a>
                         </div>
@@ -259,13 +262,16 @@
                             <img class="carouselImg" src="images/karusellbilde4_hacker.jpg" style="width:100%" alt="Bilde av Geir André">
                             <a href="#">    
                                 <div class="TextBox">
+                                        <div class="sub_txtbox">
                                     <h4 class="carusell-tittle">- Jeg er en hacker, en snill en</h4>
                                     <p class="byline">Skrevet av Mathilde Stray Øksendal<br>Publisert 27. mars 2019</p>
                                     <p class="slide-article">Geir André (36) jobber som sikkerhetsekspert i Kristiansand. – For meg er det drømmen å fullføre en bachelorgrad.</p>
                                     <a class="carusell-link">
                                         <div class="carusell-button">Les mer</div>
                                     </a>
+                                    </div>
                                 </div>
+                                
                             </a>
                         </div>
   
@@ -273,6 +279,7 @@
                         <div class="mySlides fade">        
                             <img class="carouselImg" src="images/karusellbilde3_Nettstudenter.jpg" style="width:100%" alt="Bilde av de tre nettstudentene Julie, Ada og Andreas.">   
                             <div class="TextBox">
+                                 <div class="sub_txtbox">
                                 <h4 class="carusell-tittle">Nettstudent på egne premisser</h4>
                                 <p class="byline">Skrevet av Mathilde Stray Øksendal<br>
                                 Publisert 04. mars 2019</p>
@@ -280,6 +287,7 @@
                                 <a class="carusell-link">
                                     <div class="carusell-button">Les mer</div>
                                 </a>
+                                </div>
                             </div>
                         </div>
 
@@ -294,11 +302,91 @@
        
             
         
-            </div>
             
             
-            <footer>
+        <div id="studie_jump"></div> <br> <br>
+        <div id="studentinfo">
+            
+        <h1 class="title_info">Studieinformasjon</h1>
+            <table class="tabel">
+            
+            
+            <tr>
+                <td class="title_tabel">Studiestart:</td>    
+                <td>12. august 2019 - campus
+                <br>13. august 2019 - nettstudier
+                <br>15. oktober 2019 - nettstudier
+                <br>Les mer om studiestart.</td>
+            </tr>
+             
                 
+            <tr>
+                <td class="title_tabel">Studiesteder:</td>    
+                <td>Oslo,
+                <br>Bergen
+                <br>Nettstudier</td>
+            </tr>
+            
+                
+                
+            <tr>
+                <td class="title_tabel">Søknadsfrist:</td>    
+                <td>Løpende opptak. Søknadene behandles i den rekkefølgen de kommer inn.</td>
+            </tr>
+                
+            <tr>
+                <td class="title_tabel">Varighet:</td>    
+                <td>2 år heltid
+                <br>4 år deltid (kun nettstudier)</td>
+            </tr>
+                
+            <tr>
+                <td class="title_tabel">Undervisnings språk:</td>    
+                <td>Engelsk på nettstudier. 
+                <br>Norsk/engelsk på campus</td>
+            </tr>
+                
+            <tr>
+                <td class="title_tabel">Pris nettstudier:</td>    
+                <td>Heltid: 35.000,- per semester 
+                <br>Deltid: 17.500,- per semester</td>
+            </tr>
+                
+            <tr>
+                <td class="title_tabel">Pris campus:</td>    
+                <td>57.250,- per semester.
+                <br>Kr 1.500,- i registreringsavgift.</td>
+            </tr>
+                
+                
+            <tr>
+                <td class="title_tabel">Godkjenninger:</td>    
+                <td>Godkjent for lån og stipend i 
+                <br>Statens Lånekasse. NOKUT-akkreditert.</td>
+            </tr>
+                
+            <tr>
+                <td class="title_tabel">Opptakskrav:</td>    
+                <td>Generell studiekompetanse eller yrkesrettet utdanning med fagbrev. Det kan også søkes på grunnlag av realkompetanse. Les mer.</td>
+            </tr>
+                
+                
+            <tr>
+                <td class="title_tabel">Grad:</td>    
+                <td>Høyere fagskolegrad</td>
+            </tr>
+            
+            <tr>
+                <td class="title_tabel">Studiepoeng:</td>    
+                <td>120</td>
+            </tr>
+            
+            </table>
+        
+</div>
+            
+            
+</div>               
                 <div class="footer_grid">
                     <div class="footer_grid_1">
                         <h1 class="footer_title">Om Noroff</h1>
@@ -325,14 +413,22 @@
                     
                     <div class="footer_grid_3">
                         <h1 class="footer_title">Motta nyhetsbrev</h1>
-                        <p class="fotter_text">For å kunne sende deg e-post må vi lagre informasjon om deg. Du kan når som helst melde deg av. Les mer i vår personvernerklæring.</p>
+                        <p class="footer_text">For å kunne sende deg e-post må vi lagre informasjon om deg. Du kan når som helst melde deg av. Les mer i vår personvernerklæring.</p>
                         
-                        <input class="footer_button_text" type="email" placeholder="email..." name="emailadresse">
-                        <input class="footer_button" type="button" value="Send" onclick="msg()">
+                        <div id="mc_embed_signup">
+                                <form action="https://gmail.us20.list-manage.com/subscribe/post?u=4c4fd51fae10a2f5dc99beb81&amp;id=f3aa805aa2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                    <div id="mc_embed_signup_scroll">
+                                        <label for="mce-EMAIL">Abonnere</label>
+                                        <input type="email" value="" name="EMAIL" class="footer_button_text email" id="mce-EMAIL" placeholder="email address" class="" required>
+                                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4c4fd51fae10a2f5dc99beb81_f3aa805aa2" tabindex="-1" value=""></div>
+                                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="footer_button button"></div>
+                                    </div>
+                                </form>
+                        </div>
                     </div>
                     
                 </div>
-            </footer>
+         
     
          
       

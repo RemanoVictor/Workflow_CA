@@ -3,6 +3,12 @@
                     margin: 0;
                     background-color: #15172c;
                 }
+
+                .innhold {
+                    z-index: 2;
+                    overflow: hidden;
+                    
+                }
             
                 .navigation{
                     background-color: #15172c;
@@ -44,7 +50,7 @@
                   color: white;
                 }
                 
-                .mobile_a_links a:hover{
+                .a_links a:hover{
                     border-bottom: 1.5px solid;
                     border-bottom-color: #fff142;
                 }
@@ -63,21 +69,17 @@
                     color: white;
                 }
                 
-                
-                footer{
-                    background-color: #101121;
-                    color: white;
-                    font-family: 'PT Sans', sans-serif;
-                }
+                   
                 
                 .footer_title{
                     font-size: 22px;
                     font-weight: 400;
                 }
                 
-                .fotter_text{
+                .footer_text{
                     font-size: 14px;
                     font-weight: 400;
+                    padding-bottom: 30px;
                 }
                 
                 .footer_grid{
@@ -85,6 +87,10 @@
                     grid-template-columns: 1fr 1fr 1fr;
                     grid-column-gap: 8em;
                     padding: 5em 8em;
+                    background-color: #101121;
+                    color: white;
+                    font-family: 'PT Sans', sans-serif;
+                    height: 300px;
                 }
                 
                 .footer_grid_1{
@@ -103,21 +109,26 @@
                     border:  1.5px solid #fff142!important;
                     background-color: #15172c;
                     color: white;
-                    width: auto!important;
-                    height: 50%;
+                    width: 98%;
+                    height: 70%;
                     margin-bottom: 1em;
-                    border-radius:0px!important;
+                    margin-top: 1em;
+                    padding: 10px 0;
+
+                    
                 }
+
+                
                 
                 .footer_button{
-                    border:  1.5px solid #fff142!important;
-                    background-color: #fff142!important;
-                    color: #15172c!important;
-                    width: 100%!important;
-                    height: 50% !important;
+                    border:  1.5px solid #fff142;
+                    background-color: #fff142;
+                    color: #15172c;
+                    width: 98.5%;
+                    height: 50%;
                     margin-bottom: 1em;
                     font-size: 15px;
-                    border-radius: 0px!important;
+                    padding: 10px 0;
                 }
                 
                 .footer_button:hover{
@@ -126,16 +137,10 @@
                     color: white!important;
                 }
                 
-                .innhold{
-                    font-family: 'PT Sans', sans-serif;
-                    
-                    z-index: -1;
-                    width: 100%;
-                }
                 
                 .mobile_navigation{
                     display: none;
-                    z-index: 1;
+                    z-index: 9;
                 }
 
 
@@ -171,14 +176,14 @@ a{
 .carusell-button2{
     position: absolute;
     left: 10%;
-    bottom: 10%;
+    bottom: 30%;
     text-decoration: none;
     color: white;
     
 }
 .carusell-tittle2{
     color: white;
-    font-size: 40px;
+    font-size: 50px;
     font-family: 'Rajdhani', sans-serif;
     font-weight: 700;
     padding: 0;
@@ -234,7 +239,7 @@ a{
 
 .nedre_carusel{
     margin-top: 80px;
-    margin-bottom: 50%;
+    margin-bottom: 20%;
 }
 .mySlides {
     display: none;
@@ -285,14 +290,19 @@ a{
 /* Number text (1/3 etc) */
 .TextBox{
     position: absolute;
-    top: 70%;
-    left: 15%;
-    padding: 5% 5%;
+    top: 80%;
+    left: 11%;
+    padding: 4% 3%;
     padding-bottom: 8%;
     background-color: #15172c;
-    width: 60%;
+    width: 50%;
     text-decoration: none;
+    margin: 0 10%;
 }
+    .sub_txtbox {
+        width: 70%;
+        margin: 0 auto;
+    }
 
 
 .carusell-link{
@@ -300,7 +310,7 @@ a{
 }
 .carusell-button{
     position: absolute;
-    right: 8%;
+    right: 15%;
     bottom: 6%;
     border: 1.5px solid #fff142;
     padding: 4px 8px;
@@ -316,6 +326,13 @@ a{
     color: #15172c;
     background-color: #fff142;
     
+}
+
+@media screen and (min-width: 1900px) {
+    .nedre_carusel{
+        margin-top: 80px;
+        margin-bottom: 15%;
+    }
 }
 
 /* The dots/bullets/indicators */
@@ -424,14 +441,15 @@ a{
 
 
 .container1{
-    box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     color: #fffaee;
     width: 60%;
     margin: 0% 20%;
-    padding: 0% 3%;
+    padding: 5% 3%;
 }
+    
+
 
 .txt_1{
     grid-column: 1/3;
@@ -447,6 +465,7 @@ a{
     grid-row: 2;
     font-family: 'PT Sans regular',sans-serif;
     font-size: 1.5em;
+    margin-bottom: 15%;
 }
 
 .janice{
@@ -463,14 +482,16 @@ a{
     grid-row: 3;
     width: 100%;
     height: auto;
-    padding: 0em 3em;
-    box-sizing: border-box;
+    padding: 8em 0em;
+ 
 
 }
+
 
 .janice1{
     font-family: 'rajdhani SemiBold',sans-serif;
     font-size: 2em;
+    padding: 0 10%;
 }
 
 .qtmrks{
@@ -485,23 +506,65 @@ a{
     margin-top: 50px;
 }
 
+@media only screen and (max-width: 900px) {
+    .innhold .container1 {
+        display: block; 
+        width: 90%; 
+        margin: 0 auto;
+        padding: 5% 3%;
+        
+    }
+
+    .txt_1 {
+    grid-column: 3/3;
+    grid-row: 1;
+    font-weight: bold;
+    font-family: 'PT Sans regular',sans-serif;
+    margin-top: 1em;
+    font-size: 28px ;
+    }
+    .txt_2 {
+        font-size: 18px ;
+    }
+
+    .janice1 {
+        font-size: 26px ;
+        margin: 0;
+    }
+
+    .qtmrks {
+        font-size: 1.7em ;
+    }
+
+    .container1 .janice {
+        width: 70%;
+        margin: 0;
+        padding: 1em 4.5em;
+       
+    }
+
+    .container1 .janice_img {
+        margin: 0 auto;
+        padding-top: 5%;
+    }
+
+    .janice_txt{
+        
+        padding: 0em 0em;
+        margin: 0;
+     
+    
+    }
+    
+    
+}
+
 /*victor code end*/
 
 
 @media only screen and (max-width: 800px) {
 
-    .top_intro{
-        width: 90%;
-        text-align: center;
-    }
-    .top_intro h2 {
-        font-size: 45px;
-    }
-    .study_info {
-        font-size: 12px;
-    }
-
-    /* top info */
+    
 
     .mapOuter {
         display: block;
@@ -567,11 +630,24 @@ a{
     padding-left: 0;
 }
 
+@media only screen and (max-width: 800px) {
+.top_intro{
+    width: 90% ;
+    text-align: center ;
+}
+.top_intro h2 {
+    font-size: 40px;
+}
+.study_info {
+    font-size: 14px ;
+}
+}
 /* accordion */
 
 
 .container_accordion{
     margin-top: 10%;
+    margin-bottom: 15%;
 }
 
 
@@ -658,11 +734,15 @@ a{
         }
     .nedre_carusel{
         margin-top: 80px;
-        margin-bottom: 400px;
+        margin-bottom: 200px;
     }                   
     .carusell-tittle2{
         font-size: 20px;
         font-weight: 700;
+    }
+
+    .carusell-button2 {
+        bottom: 10%;
     }
     .carusell-button{
        bottom: 1%;
@@ -671,8 +751,14 @@ a{
         
     .TextBox{
     padding-bottom: 16%;
-    width: 80%;
-    left: 5%;
+    width: 85%;
+    left: 0%;
+    margin: 0 5%;
+    
+    }
+
+    .sub_txtbox {
+        width: 100%;
     }
 
     .accordion_box {
@@ -694,91 +780,6 @@ a{
   
     padding-top: 0px;
 }
-
-.container1{
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 1fr;
-    color: #fffaee;
-    width: 60%;
-    margin: 0% 20%;
-    padding: 0% 3%;
-}
-
-.txt_1{
-    grid-column: 1/2;
-    grid-row: 1;
-    font-weight: bold;
-    font-family: 'PT Sans regular',sans-serif;
-    margin-top: 1em;
-    font-size: 2em;
-}
-
-.txt_2{
-    grid-column: 1/2;
-    grid-row: 2;
-    font-family: 'PT Sans regular',sans-serif;
-    font-size: 1.5em;
-}
-
-.janice{
-    width: 80%;
-    height: auto;
-    grid-column: 1/2;
-    grid-row: 3;
-    margin-top: 50px;
-    padding: 0em 3em;
-    
-}
-.janice_txt{
-    grid-column: 1/2;
-    grid-row: 4;
-    width: 100%;
-    height: auto;
-    padding: 0em 3em;
-    box-sizing: border-box;
-
-}
-
-.janice1{
-    font-family: 'rajdhani SemiBold',sans-serif;
-    font-size: 2em;
-}
-
-.qtmrks{
-    color: #fff142;
-    font-size:2em;
-}
-
-.janice2{
-    font-family: 'rajdhani SemiBold',sans-serif;
-    font-size: 1.750em;
-    text-align: right;
-    margin-top: 5px;
-}
-
-.footer_button_text{
-    border:  1.5px solid #fff142!important;
-    background-color: #15172c;
-    color: white;
-    width: 96%!important;
-    height: 50%;
-    margin-bottom: 1em;
-    border-radius:0px!important;
-}
-
-.footer_button{
-    border:  1.5px solid #fff142!important;
-    background-color: #fff142!important;
-    color: #15172c!important;
-    width: 100%!important;
-    height: 50% !important;
-    margin-bottom: 1em;
-    font-size: 15px;
-    border-radius: 0px!important;
-}
-
-/*victor code end*/
 
 
 }
@@ -847,7 +848,7 @@ a{
                     border-bottom-color: #15172c;
                 }
                 
-                .mobile_a_links a:hover{
+                .mobile_a_links a:active{
                     border-bottom: 1.5px solid;
                     border-bottom-color: #fff142;
                 }
@@ -876,6 +877,8 @@ a{
                     grid-template-columns: 1fr;
                     grid-column-gap: 8em;
                     padding: 5em 3em;
+                    height: 100%;
+                    margin-top: 20%;
                 }
             
                 
@@ -897,13 +900,12 @@ a{
                 .footer_button{
                     margin-top: 10%;
                     height: 50%;
+                    margin-top: 0;
    
                 }
-                    .footer{
-                        z-index: 2;
-                    }
+                    
                      .carusell-tittle2{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
 }
                     
@@ -946,3 +948,106 @@ a{
 
 /*upper carousel*/
 
+/* studieinformasjon */
+
+.title_info{
+    font-family: 'PT Sans', sans-serif;
+    margin-left: 5%;
+}
+
+#studentinfo{
+    border-left: 1.5px solid;
+    border-left-color: #fff142;
+    float: right;
+    margin-left: 45%;
+    color: white;
+    margin-bottom: 10%;
+}
+
+table{
+    border-spacing: 0 12px;
+    margin-left: 5%;
+    padding-right: 30%;
+    float: right;
+    font-size: 0.8em;
+    width: 100%;
+    padding-left: 10%;
+}
+
+.title_tabel{
+    width: 5%;
+    
+}
+
+
+.tabel tr td{
+    font-family: 'PT Sans', sans-serif;
+    width: 5%;
+    
+}
+
+.tabel tr .title_tabel{
+    vertical-align: top;
+    padding-left: 2%;
+    padding-top: 2%;
+}
+
+.tabel td{
+    border-bottom: 1.5px solid;
+    border-bottom-color: #fff142;
+    padding: 2% 0 4% 0; 
+}
+
+    #studie_jump {
+        height: 150px;
+    }
+
+
+@media only screen and (max-width: 600px){
+    
+       .title_info{
+    margin-left: 2%;
+}
+    
+    #studentinfo{
+    float: none;
+    margin-left: 10%;   
+    display: block;
+
+}
+    table{
+        display: block;
+    margin-left: 5%;
+    padding-right: 15%;
+    font-size: 20em;
+}
+    
+    .tabel td{
+    padding: 2% 0 3% 5%; 
+}
+    
+}
+
+
+@media only screen and (max-width: 900px){
+    
+    .title_info{
+    margin-left: 2%;
+}
+    
+    #studentinfo{
+    float: none;
+    margin-left: 20%;
+        
+}
+            table{
+    margin-left: 20%;
+    font-size: 1em;
+}
+    
+    .tabel td{
+    padding: 2% 0 3% 15%; 
+    width: 20%;
+}
+    
+}
